@@ -6,10 +6,19 @@
 
 
 .img1{
-    height: 80px;
-    width: 150px;
+    height: 50px;
+    width: 100px;
 }
 
+.img2{
+    height: 25%;
+    width: 25%;
+    position: relative;
+    top:  390px;
+    left: 37%;
+    text-align: center;
+    border-radius: 15px;
+}
 
 
 .nav-links ul li{
@@ -51,5 +60,104 @@ a {
 
   .h1{
     font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-
   }
+
+  .text-box{
+    width: 90%;
+    position: absolute;
+    top:  35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .text-box2{
+    width: 90%;
+    position: absolute;
+    top:  1100px;
+    left: 100px;
+    text-align: center;
+  }
+
+  .p1{
+    position:relative;
+    text-align: center;
+    top: 500px;
+  }
+
+  @media(max-width: 700px){
+    
+  }
+
+  .hr1{
+    color:white;
+  }
+
+
+  .card {
+    border-radius: 16px;
+    margin: 0 auto;
+    width: 500px;
+    max-width: 100%;
+    min-height: 500px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-image: url(https://i.ibb.co/m0R78TX/pic1.png);
+    background-size: cover;
+    position: relative;
+    top: 300px;
+  }
+  
+  .info {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #fff;
+    transform: translateY(100%)
+      translateY(-88px)
+      translateZ(0);
+    transition: transform 0.5s ease-out;
+  }
+  
+  .info:before {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(https://source.unsplash.com/collection/905011/1000x1000);
+    filter: blur(10px);
+    background-size: cover;
+    opacity: 0.25;
+    transform: translateY(-100%)
+      translateY(88px)
+      translateZ(0);
+    transition: transform 0.5s ease-out;
+  }
+  
+  .card:hover .info,
+  .card:hover .info:before {
+    transform: translateY(0) translateZ(0);
+  }
+  
+  .title {
+    margin: 0;
+    padding: 24px;
+    font-size: 40px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  .description {
+    margin: 0;
+    padding: 0 24px 24px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* General layout and typography stuff */
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+  
