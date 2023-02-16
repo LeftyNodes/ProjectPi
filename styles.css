@@ -65,16 +65,16 @@ a {
   .text-box{
     width: 90%;
     position: absolute;
-    top:  35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top:  30%;
+    left: 70px;
     text-align: center;
   }
+
   .text-box2{
     width: 90%;
     position: absolute;
-    top:  1100px;
-    left: 100px;
+    top:  1700px;
+    left: 70px;
     text-align: center;
   }
 
@@ -95,7 +95,7 @@ a {
 
   .card {
     border-radius: 16px;
-    margin: 0 auto;
+    margin: 60px 10px 0 100px;
     width: 500px;
     max-width: 100%;
     min-height: 500px;
@@ -161,3 +161,86 @@ a {
   /* General layout and typography stuff */
   @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
   
+  .card2 {
+    border-radius: 16px;
+    margin: 0 auto -50px ;
+    width: 500px;
+    max-width: 100%;
+    min-height: 500px;
+    box-shadow: 0px 3px 5px -1px rgba(81, 46, 207, 0.397),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-image: url(https://i.ibb.co/DLPdxvN/Pic-4.png);
+    background-size: cover;
+    position: relative;
+    top: 300px;
+  }
+
+  .card2:hover .info,
+  .card2:hover .info:before {
+    transform: translateY(0) translateZ(0);
+  }
+
+  .card3 {
+    border-radius: 16px;
+    margin: 0 10px -50px;
+    width: 500px;
+    max-width: 100%;
+    min-height: 500px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-image: url(https://i.ibb.co/TtB1LZC/Pic-2.png);
+    background-size: cover;
+    position: relative;
+    top: 300px;
+  }
+
+  .card3:hover .info,
+  .card3:hover .info:before {
+    transform: translateY(0) translateZ(0);
+  }
+
+  .card4 {
+    border-radius: 16px;
+    margin: 0px auto 0px 400px;
+    width: 500px;
+    max-width: 100%;
+    min-height: 500px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-image: url(https://i.ibb.co/n6Q2Wc9/Pic-5.png);
+    background-size: cover;
+    position: relative;
+    top: 300px;
+  }
+
+  .card4:hover .info,
+  .card4:hover .info:before {
+    transform: translateY(0) translateZ(0);
+  }
+
+  .card5 {
+    border-radius: 16px;
+    margin: 0 10px;
+    width: 500px;
+    max-width: 100%;
+    min-height: 500px;
+    box-shadow: 0px 3px 5px -1px rgba(247, 40, 40, 0.2),
+      0px 5px 8px 0px rgba(255, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-image: url(https://i.ibb.co/gWjhwC4/Pic-6.png);
+    background-size: cover;
+    position: relative;
+    top: 300px;
+  }
+
+  .card5:hover .info,
+  .card5:hover .info:before {
+    transform: translateY(0) translateZ(0);
+  }
