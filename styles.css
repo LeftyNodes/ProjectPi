@@ -337,3 +337,12 @@ a {
   .card8:hover .info:before {
     transform: translateY(0) translateZ(0);
   }
+
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding: 1em;
+    font-size: 1.5em;
+    color: #D6D5D5;
+  }
