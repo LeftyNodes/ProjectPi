@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --transparent: rgba(0, 0, 0, 0);
+  --semi-transparent: rgba(0, 0, 0, 0.8);
+  --secondary-colour: #26b79f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background-color: #1d1e22;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#contact-title {
+  text-align: center;
+  font-size: 3em;
+  color: var(--secondary-colour);
+  width: 60vw;
+}
+
+#contact-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#name-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+#mail-input {
+  width: 93%;
+}
+
+#subject-input {
+  width: 93%;
+}
+
+form input, form textarea{
+  padding: 1em;
+  margin: 1em;
+  border: 0px;
+  border-radius: 0.5em;
+  border: 0.2em solid var(--transparent);
+}
+
+form input:focus, form textarea:focus{
+  outline: none;
+  background: #EBEBEB;
+  border-color: var(--secondary-colour);
+}
+
+#subject-input{
+  resize: vertical;
+  min-height: 3em;
+}
+
+#submit-button {
+  cursor: pointer;
+  width: fit-content;
+  padding: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
+  background-color: var(--secondary-colour);
+  border-radius: 5em;
+  color: white;  
+  font-size: 1em;
+  border: 0.1em solid var(--secondary-colour);
+}
+
+#traditional-contact {
+  margin: 1em;
+  padding: 1em;
+  border-left: 0.2em solid var(--secondary-colour);
+  text-align: left;
+}
+
+#traditional-contact h2{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+hr {
+  margin: 1em;
+  width: 100%;
+}
+
+#contact-link{
+  text-decoration: none;
+  color: var(--secondary-colour);
+}
+
+.fa {
+  text-decoration: none;
+  font-size: 1.2em;
+  margin-right: 0.5em;
+  color: var(--secondary-colour);
+  padding: 0.5em;
+  width: 2em;
+  text-align: center;
+}
+
+@media (hover: hover) {
+  #submit-button:hover {
+    background-color: var(--transparent);
+    color: var(--secondary-colour);
+  }
+  
+  .fa:hover {
+    background-color: var(--secondary-colour);
+    color: #1d1e22;
+  }
+  
+  #contact-link:hover{
+    border-bottom: 0.1em dashed var(--secondary-colour);
+    border-top: 0.1em dashed var(--secondary-colour);
+  }
+}
+
+@media (hover: none) {
+  #submit-button {
+    background-color: var(--transparent);
+    color: var(--secondary-colour);
+  }
+  
+  #contact-link{
+    border-bottom: 0.1em dashed var(--secondary-colour);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #traditional-contact {
+    border-top: 0.2em solid var(--secondary-colour);
+    border-left: 0.2em solid var(--transparent);
+  }
+}
+
+
+
+
+
+
+/* ---- START FOOTER ---- */
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 1em;
+  font-size: 1.5em;
+  color: #D6D5D5;
+}
+
+#anmabe{
+  background: linear-gradient(
+    -45deg, 
+    #ee7752, 
+    #e73c7e, 
+    #23a6d5, 
+    #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#anmabe:hover{
+  text-decoration: underline;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+/* ---- END FOOTER ---- */
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 100px; 
+scroll-padding: 50px;
+}
+
+
+
+.img1{
+  height: 25%;
+  width: 25%;
+  position: relative;
+  top:  2300px;
+  left: 29%;
+  text-align: center;
+  border-radius: 15px;
+}
+
+
+.nav-links ul li{
+  display: flex;
+  padding:55px 10px;
+  justify-content: space-between;
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  left: 510px;
+
+}
+
+a {
+  color: #f5eeee;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #ececec;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .4s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.h1{
+  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.text-box{
+  width: 90%;
+  position: absolute;
+  top:  25%;
+  left: -60px;
+  text-align: center;
+}
+
+.text-box2{
+  width: 90%;
+  position: absolute;
+  top:  1750px;
+  left: 30px;
+  text-align: center;
+}
+
+
+#PRESALE{
+  scroll-behavior: smooth;
+  position: absolute;
+  top: 2000px;
+  left: 300px;
+}
+#TEAM{
+  position: absolute;
+  top: 3000px;
+  left: 300px;
+  
+}
+
+.p1{
+  position:relative;
+  text-align: center;
+  top: 500px;
+}
+
+@media(max-width: 700px){
+  
+}
+
+.hr1{
+  color:rgb(20, 18, 18);
+}
+
+.hr2{
+  width: 120px;
+}
+
+.hr3{
+  width: 70px;
+  }
+
+
+.card {
+  border-radius: 16px;
+  margin: 55px 10px 0 10px;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(https://i.ibb.co/m0R78TX/pic1.png);
+  background-size: cover;
+  position: relative;
+  top: 300px;
+}
+
+.info {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #dfdfdf;
+  transform: translateY(100%)
+    translateY(-88px)
+    translateZ(0);
+  transition: transform 0.6s ease-out;
+}
+
+.info:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: ' ';
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(https://source.unsplash.com/collection/905011/1000x1000);
+  filter: blur(10px);
+  background-size: cover;
+  opacity: 0.15;
+  transform: translateY(-100%)
+    translateY(88px)
+    translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover .info,
+.card:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.title {
+  margin: 0;
+  padding: 24px;
+  font-size: 35px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.description {
+  margin: 0;
+  padding: 0 24px 24px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* General layout and typography stuff */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+.card2 {
+  border-radius: 16px;
+  margin: 0 auto -50px ;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(81, 46, 207, 0.397),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(https://i.ibb.co/DLPdxvN/Pic-4.png);
+  background-size: cover;
+  position: relative;
+  top: 300px;
+}
+
+.card2:hover .info,
+.card2:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.card3 {
+  border-radius: 16px;
+  margin: 0 10px -50px;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(https://i.ibb.co/TtB1LZC/Pic-2.png);
+  background-size: cover;
+  position: relative;
+  top: 300px;
+}
+
+.card3:hover .info,
+.card3:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.card4 {
+  border-radius: 16px;
+  margin: 0px auto 0px 270px;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(https://i.ibb.co/n6Q2Wc9/Pic-5.png);
+  background-size: cover;
+  position: relative;
+  top: 300px;
+}
+
+.card4:hover .info,
+.card4:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.card5 {
+  border-radius: 16px;
+  margin: 0 10px;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(247, 40, 40, 0.2),
+    0px 5px 8px 0px rgba(255, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(https://i.ibb.co/gWjhwC4/Pic-6.png);
+  background-size: cover;
+  position: relative;
+  top: 300px;
+}
+
+.card5:hover .info,
+.card5:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.bottom-row{
+  position: relative;
+  top: 2800px;
+  left: 500px;
+}
+
+.card6 {
+  border-radius: 16px;
+  margin: 0 300px;
+  width: 600px;
+  max-width: 100%;
+  min-height: 100px;
+  box-shadow: 0px 3px 5px -1px rgba(247, 40, 40, 0.2),
+    0px 5px 8px 0px rgba(255, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(https://i.ibb.co/gWjhwC4/Pic-6.png);
+  background-size: cover;
+  position: relative;
+  top: 30px;
+}
+
+.card6:hover .info,
+.card6:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.card7 {
+  border-radius: 16px;
+  margin: 0 30px;
+  width: 400px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(85, 40, 211, 0.2),
+    0px 5px 8px 0px rgba(253, 238, 238, 0.14),
+    0px 1px 14px 0px rgba(252, 246, 246, 0.12);
+  overflow: hidden;
+  background-image: url(https://i.ibb.co/wrx1pDm/lefty.jpg);
+  background-size: 400px;
+  position: relative;
+  top: 30px;
+}
+
+.card7:hover .info,
+.card7:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.card8 {
+  border-radius: 16px;
+  margin: 0 30px;
+  width: 400px;
+  max-width: 100%;
+  min-height: 100px;
+  box-shadow: 0px 3px 5px -1px rgba(247, 40, 40, 0.2),
+    0px 5px 8px 0px rgba(255, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(/Photos/040-PROFILE.jpg);
+  background-size: cover;
+  position: relative;
+  top: 30px;
+}
+
+.card8:hover .info,
+.card8:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
