@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+}
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px; 
+    scroll-padding: 50px;
+  }
+
+  .h1{
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  .h2{
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+  .h3{
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  }
+.nav-links ul li{
+    display: flex;
+    padding:55px 10px;
+    justify-content: space-between;
+    list-style: none;
+    display: inline-block;
+    position: relative;
+    left: 510px;
+
+}
+
+a {
+    color: #f5eeee;
+    position: relative;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #ececec;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .4s ease-in-out;
+  }
+  
+  a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+  }
+
+  #PRESEARCH{
+    scroll-behavior: smooth;
+    position: absolute;
+    top: 2000px;
+    left: 300px;
+  }
+  .text-box1{
+    width: 90%;
+    position: absolute;
+    top:  30%;
+    left: 50px;
+  }
+
+  .text-box2{
+    width: 90%;
+    position: absolute;
+    top:  95%;
+    left: 0px;
+  }
+
+
+  .card1 {
+    border-radius: 16px;
+    margin: 55px 10px 0 10px;
+    width: 500px;
+    max-width: 100%;
+    min-height: 500px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+      0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+      0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    background-image: url(https://i.ibb.co/mG900Lk/Pre.png);
+    background-size: cover;
+    position: relative;
+    top: -70px;
+    left: 200px;
+  }
+  
+  .info {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #dfdfdf;
+    transform: translateY(100%)
+      translateY(-88px)
+      translateZ(0);
+    transition: transform 0.6s ease-out;
+  }
+  
+  .info:before {
+    z-index: -1;
+    display: block;
+    position: absolute;
+    content: ' ';
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url(https://source.unsplash.com/collection/905011/1000x1000);
+    filter: blur(10px);
+    background-size: cover;
+    opacity: 0.15;
+    transform: translateY(-100%)
+      translateY(88px)
+      translateZ(0);
+    transition: transform 0.5s ease-out;
+  }
+  
+  .card1:hover .info,
+  .card1:hover .info:before {
+    transform: translateY(0) translateZ(0);
+  }
+  
+  .title {
+    margin: 0;
+    padding: 24px;
+    font-size: 35px;
+    line-height: 1;
+    color: rgba(0, 0, 0, 0.87);
+  }
+  
+  .description {
+    margin: 0;
+    padding: 0 24px 24px;
+    font-size: 18px;
+    line-height: 1.5;
+  }
+  
+  /* General layout and typography stuff */
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+  
