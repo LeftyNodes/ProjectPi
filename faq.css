@@ -47,6 +47,8 @@ a:hover::before {
   top:  20%;
   left: -60px;
   text-align: center;
+  
+ 
 }
 
 .text-box2{
@@ -55,6 +57,11 @@ a:hover::before {
   top:  55%;
   left: -60px;
   text-align: center;
+  padding-bottom: 250px;
+  margin-top: 30px;
+  
+
+
 }
 
 .text-box3{
@@ -63,5 +70,7 @@ a:hover::before {
   top:  80%;
   left: -60px;
   text-align: center;
+  padding-bottom: 10%;
+  margin-top: 180px;
 }
 

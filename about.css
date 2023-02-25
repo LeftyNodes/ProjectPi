@@ -1,66 +1,280 @@
 *{
-    margin: 0;
-    padding: 0;
-    font-family: 'IBM Plex Mono', monospace;
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Mono', monospace;
 }
 
+html {
+scroll-behavior: smooth;
+scroll-padding-top: 100px; 
+scroll-padding: 50px;
+}
+
+
+
+.img1{
+  height: 25%;
+  width: 25%;
+  position: relative;
+  top:  2300px;
+  left: 29%;
+  text-align: center;
+  border-radius: 15px;
+}
+
+
 .nav-links ul li{
-    display: flex;
-    padding:55px 10px;
-    justify-content: space-between;
-    list-style: none;
-    display: inline-block;
-    position: relative;
-    left: 510px;
+  display: flex;
+  padding:55px 10px;
+  justify-content: space-between;
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  left: 510px;
 
 }
 
 a {
-    color: #f5eeee;
-    position: relative;
-    text-decoration: none;
-    font-size: 20px;
-  }
+  color: #f5eeee;
+  position: relative;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #ececec;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .4s ease-in-out;
+}
+
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.h1{
+  font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+.text-box{
+  width: 90%;
+  position: absolute;
+  top:  25%;
+  left: -60px;
+  text-align: center;
+}
+
+.text-box2{
+  width: 90%;
+  position: absolute;
+  top:  1750px;
+  left: 30px;
+  text-align: center;
+}
+
+
+#PRESALE{
+  scroll-behavior: smooth;
+  position: absolute;
+  top: 2000px;
+  left: 300px;
+}
+#TEAM{
+  position: absolute;
+  top: 3000px;
+  left: 300px;
   
-  a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    border-radius: 4px;
-    background-color: #ececec;
-    bottom: 0;
-    left: 0;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .4s ease-in-out;
-  }
+}
+
+.p1{
+  position:relative;
+  text-align: center;
+  top: 500px;
+}
+
+@media(max-width: 700px){
   
-  a:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
+}
+
+.hr1{
+  color:rgb(20, 18, 18);
+}
+
+.hr2{
+  width: 120px;
+}
+
+.hr3{
+  width: 70px;
   }
 
-  .text-box1{
-    width: 90%;
-    position: absolute;
-    top:  20%;
-    left: -60px;
-    text-align: center;
-  }
 
-  .text-box2{
-    width: 90%;
-    position: absolute;
-    top:  55%;
-    left: -60px;
-    text-align: center;
-  }
+.card {
+  border-radius: 16px;
+  margin: 55px 10px 0 10px;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url("Photos/Passion.png");
+  background-size: cover;
+  position: relative;
+  top: 300px;
+}
 
-  .text-box3{
-    width: 90%;
-    position: absolute;
-    top:  80%;
-    left: -60px;
-    text-align: center;
-  }
+.info {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  background-color: #dfdfdf;
+  transform: translateY(100%)
+    translateY(-88px)
+    translateZ(0);
+  transition: transform 0.6s ease-out;
+}
+
+.card:hover .info,
+.card:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.title {
+  margin: 0;
+  padding: 24px;
+  font-size: 35px;
+  line-height: 1;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.description {
+  margin: 0;
+  padding: 0 24px 24px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* General layout and typography stuff */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400");
+
+.card2 {
+  border-radius: 16px;
+  margin: 0 auto -50px ;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(81, 46, 207, 0.397),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(Photos/Team.png);
+  background-size: cover;
+  position: relative;
+  top: 300px;
+}
+
+.card2:hover .info,
+.card2:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.card3 {
+  border-radius: 16px;
+  margin: 0 10px -50px;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url("Photos/Mission.png");
+  background-size: cover;
+  position: relative;
+  top: 300px;
+}
+
+.card3:hover .info,
+.card3:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.card4 {
+  border-radius: 16px;
+  margin: 55px 10px 0 10px;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url("Photos/Services.png");
+  background-size: cover;
+  position: relative;
+  top: 300px;
+}
+
+.card4:hover .info,
+.card4:hover .info:before {
+  transform: translateY(0) translateZ(0);
+
+}
+
+
+.card5 {
+  border-radius: 16px;
+  margin: 0 auto -50px ;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(81, 46, 207, 0.397),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(Photos/Transparency.png);
+  background-size: cover;
+  position: relative;
+  top: 300px;
+}
+
+.card5:hover .info,
+.card5:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.card6 {
+  border-radius: 16px;
+  margin: 0 10px -50px;
+  width: 500px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url("Photos/Intregity.png");
+  background-size: cover;
+  position: relative;
+  top: 300px;
+}
+
+.card6:hover .info,
+.card6:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+
+
+
+
