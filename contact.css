@@ -78,6 +78,7 @@ a:hover::before {
   top:  1750px;
   left: 30px;
   text-align: center;
+  
 }
 
 
@@ -130,7 +131,7 @@ a:hover::before {
   background-image: url("Photos/Discord.png");
   background-size: cover;
   position: relative;
-  top: 300px;
+  top: 150px;
 }
 
 .info {
@@ -180,7 +181,7 @@ a:hover::before {
   background-image: url(Photos/Twitter.png);
   background-size: cover;
   position: relative;
-  top: 300px;
+  top: 150px;
 }
 
 .card2:hover .info,
@@ -201,7 +202,7 @@ a:hover::before {
   background-image: url("Photos/Linkedin.png");
   background-size: cover;
   position: relative;
-  top: 300px;
+  top: 150px;
 }
 
 .card3:hover .info,
