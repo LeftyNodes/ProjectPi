@@ -243,7 +243,7 @@ a {
     0px 5px 8px 0px rgba(0, 0, 0, 0.14),
     0px 1px 14px 0px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-  background-image: url("Photos/Discord.png");
+  background-image: url("https://i.ibb.co/mG900Lk/Pre.png");
   background-size: cover;
 }
 
@@ -290,7 +290,7 @@ a {
     0px 5px 8px 0px rgba(0, 0, 0, 0.14),
     0px 1px 14px 0px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-  background-image: url(Photos/Twitter.png);
+  background-image: url(Photos/Gala.png);
   background-size: cover;
 }
 
@@ -308,7 +308,7 @@ a {
     0px 5px 8px 0px rgba(0, 0, 0, 0.14),
     0px 1px 14px 0px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-  background-image: url("Photos/Linkedin.png");
+  background-image: url("Photos/Meta.png");
   background-size: cover;
 }
 
