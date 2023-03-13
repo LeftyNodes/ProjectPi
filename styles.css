@@ -266,7 +266,7 @@ a {
 }
 .p-sale > h2 {
   border-bottom: 2px solid #fff;
-  width: 33%;
+  width:69%;
   padding-bottom: 3px;
   font-size: 30px;
 }
@@ -466,7 +466,7 @@ a {
   box-shadow: 0px 3px 5px -1px rgba(247, 40, 40, 0.2),
     0px 5px 8px 0px rgba(255, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-  background-image: url(https://i.ibb.co/gWjhwC4/Pic-6.png);
+  background-image: url(products.jpeg);
   background-size: cover;
 }
 
