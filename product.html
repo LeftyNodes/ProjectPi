@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Project π</title>
+    <link rel="stylesheet" href="button.css" />
     <link rel="stylesheet" href="product.css" />
     <link rel="icon" type="image/png" href="/Photos/favicon1.png" />
     <link
@@ -41,26 +42,46 @@
 
     <div class="container">
       <div class="text-box1">
-        <h1 id="demo" style="color:white"></h1>
-        <h1>Pre-Sale coming soon.</h1>
+        <h1 id="demo" style="color: white"></h1>
+        <h1>Pre-Sale is now live. &#128640; &#128640; &#128640;</h1>
       </div>
 
       <div class="cards">
         <div class="card">
           <div class="info">
             <h1 class="title">Presearch</h1>
-            <p class="description">Link Coming Soon
+            <p class="description">
+              Presearch is a different kind of search engine that works using
+              blockchain technology. It's designed to be more private, fair and
+              community-driven than search engines like Google.
             </p>
+
+            <div class="center">
+              <stripe-buy-button
+                buy-button-id="buy_btn_1MlO5oFdvuPCgnQrdBS9gTs6"
+                publishable-key="pk_live_51MjAnPFdvuPCgnQrLzOoRw074xDESWHe21Yp9gbeqnlodkwLE0qVrS8Cd40Pcvyxb3gqpGoS6XwGc6z0qcLNaMrI0056eB75sq"
+              >
+              </stripe-buy-button>
+            </div>
           </div>
         </div>
 
         <div class="card2">
           <div class="info">
             <h1 class="title">Gala</h1>
+
             <p class="description">
-              Link Coming Soon 
-             
+              Gala is a blockchain-based company that aims to build
+              decentralized ecosystems for gaming, film, and music.
             </p>
+
+            <div class="center">
+              <stripe-buy-button
+                buy-button-id="buy_btn_1MlO8EFdvuPCgnQraqmpT73M"
+                publishable-key="pk_live_51MjAnPFdvuPCgnQrLzOoRw074xDESWHe21Yp9gbeqnlodkwLE0qVrS8Cd40Pcvyxb3gqpGoS6XwGc6z0qcLNaMrI0056eB75sq"
+              >
+              </stripe-buy-button>
+            </div>
           </div>
         </div>
 
@@ -68,9 +89,19 @@
           <div class="info">
             <h1 class="title">Pay with Crypto</h1>
             <p class="description">
-              Link Coming Soon
-              
+              If you would like to purchase a Presearch or Gala Node with crypto
             </p>
+
+            <form
+              action="https://docs.google.com/forms/d/1cR3l4j166GNPp-RqhyvCX6AZYZGS3DdrBlPnC51pqpQ/edit?pli=1"
+              method="get"
+              target="_blank"
+              class="center"
+            >
+              <button type="submit" class="buyButtonCopy">
+                <span class="buyButtonText"> Buy </span>
+              </button>
+            </form>
           </div>
         </div>
       </div>
@@ -125,6 +156,8 @@
         <p>Copyright &copy; 2023 project π</p>
       </div>
     </footer>
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
     <script>
       const theBody = document.querySelector("body");
       const openNav = document.querySelector(".menu-bar button");
