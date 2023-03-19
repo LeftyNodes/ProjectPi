@@ -200,6 +200,14 @@ a:hover:after {
   row-gap: 40px;
 }
 
+.cards-info {
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  row-gap: 40px;
+}
+
 
 .text-box1 {
   display: flex;
@@ -319,6 +327,24 @@ a {
 
 .card3:hover .info,
 .card3:hover .info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.card4 {
+  border-radius: 16px;
+  width: 400px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(81, 46, 207, 0.397),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(Photos/streamr.png);
+  background-size: cover;
+}
+
+.card4:hover .info,
+.card4:hover .info:before {
   transform: translateY(0) translateZ(0);
 }
 /* .footer {
