@@ -321,7 +321,7 @@ a {
     0px 5px 8px 0px rgba(0, 0, 0, 0.14),
     0px 1px 14px 0px rgba(0, 0, 0, 0.12);
   overflow: hidden;
-  background-image: url("Photos/MM.png");
+  background-image: url("Photos/Meta.png");
   background-size: cover;
 }
 
@@ -547,7 +547,7 @@ div.social {
 
 }
 
-.buyButtonCopy {
+/**.buyButtonCopy {
   background-color: rgb(0, 116, 212);
   color: rgb(255, 255, 255);
   -webkit-appearance: button;
@@ -573,12 +573,13 @@ div.social {
   line-height: 1.15;
   margin: 0; 
   width: 288px;
-  height: 44px;
+  height: 44px;**/
+
 }
 
-.buyButtonText {
+/**.buyButtonText {
   line-height: 44px;
   text-align: center;
   white-space: normal;
-  font-family: "IBM Plex Mono", monospace !important
+  font-family: "IBM Plex Mono", monospace !important**/
 }
