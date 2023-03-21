@@ -347,7 +347,7 @@ a {
 .card4:hover .info:before {
   transform: translateY(0) translateZ(0);
 }
-/* .footer {
+ .footer {
   display: flex;
   justify-content: center;
   gap: 3em;
@@ -369,7 +369,7 @@ a {
 .footer > a:hover:after {
   width: 100%;
   left: 0;
-} */
+} 
 
 
 @media (max-width: 768px) {
@@ -547,7 +547,7 @@ div.social {
 
 }
 
-/**.buyButtonCopy {
+.buyButtonCopy {
   background-color: rgb(0, 116, 212);
   color: rgb(255, 255, 255);
   -webkit-appearance: button;
@@ -573,13 +573,13 @@ div.social {
   line-height: 1.15;
   margin: 0; 
   width: 288px;
-  height: 44px;**/
+  height: 44px;
 
 }
 
-/**.buyButtonText {
+.buyButtonText {
   line-height: 44px;
   text-align: center;
   white-space: normal;
-  font-family: "IBM Plex Mono", monospace !important**/
+  font-family: "IBM Plex Mono", monospace !important
 }
