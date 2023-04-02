@@ -271,14 +271,9 @@ a {
   transition: transform 0.6s ease-out;
 }
 
-.card:hover .info,
-.card:hover .info:before {
-  transform: translateY(0) translateZ(0);
-}
 
 .title {
   margin: 0;
-  padding: 24px;
   font-size: 35px;
   line-height: 1;
   color: rgba(0, 0, 0, 0.87);
@@ -307,10 +302,6 @@ a {
   background-size: cover;
 }
 
-.card2:hover .info,
-.card2:hover .info:before {
-  transform: translateY(0) translateZ(0);
-}
 
 .card3 {
   border-radius: 16px;
@@ -325,10 +316,6 @@ a {
   background-size: cover;
 }
 
-.card3:hover .info,
-.card3:hover .info:before {
-  transform: translateY(0) translateZ(0);
-}
 
 .card4 {
   border-radius: 16px;
@@ -343,11 +330,20 @@ a {
   background-size: cover;
 }
 
-.card4:hover .info,
-.card4:hover .info:before {
-  transform: translateY(0) translateZ(0);
-}
 .card5 {
+  border-radius: 16px;
+  width: 400px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(81, 46, 207, 0.397),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url("https://i.ibb.co/mG900Lk/Pre.png");
+  background-size: cover;
+}
+
+.card6 {
   border-radius: 16px;
   width: 400px;
   max-width: 100%;
@@ -360,10 +356,19 @@ a {
   background-size: cover;
 }
 
-.card5:hover .info,
-.card5:hover .info:before {
-  transform: translateY(0) translateZ(0);
+.card7 {
+  border-radius: 16px;
+  width: 400px;
+  max-width: 100%;
+  min-height: 500px;
+  box-shadow: 0px 3px 5px -1px rgba(81, 46, 207, 0.397),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  background-image: url(Photos/Bitcoin.png);
+  background-size: cover;
 }
+
  .footer {
   display: flex;
   justify-content: center;
@@ -588,9 +593,43 @@ div.social {
   font-family: inherit;
   font-size: 100%;
   line-height: 1.15;
-  margin: 0; 
-  width: 288px;
+  margin: 10px; 
+  width: 150px;
   height: 44px;
+  margin-left: -10px;
+  bottom: 10px;
+  
+
+}
+.buyButtonCopyR {
+  background-color: rgb(49, 184, 72);
+  color: rgb(255, 255, 255);
+  -webkit-appearance: button;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border: 0;
+  border-radius: 6px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  height: 100%;
+  outline: none;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  text-decoration: none;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  transition: all .2s ease,box-shadow .08s ease-in;
+  width: 100%; 
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 10px; 
+  width: 150px;
+  height: 44px;
+  bottom: 10px;
+
 
 }
 
