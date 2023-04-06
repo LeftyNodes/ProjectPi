@@ -151,12 +151,12 @@ a:hover:after {
 }
 .menu-bar i::after {
   display: block;
-  content: "";
+  content: "";  
   border-top: 3px solid #444444;
   margin: 6px 0;
 }
 .menu-bar button:hover {
-  background: white;
+  background: blue;
 }
 .menu-bar button:hover i {
   border-color: #222222;
@@ -211,7 +211,7 @@ a:hover:after {
 
 
 a {
-  color: #fff;
+  color: #029dfd;
   font-size: 20px;
   text-decoration: none;
   position: relative;
@@ -258,10 +258,6 @@ a {
   transition: transform 0.6s ease-out;
 }
 
-.card:hover .info,
-.card:hover .info:before {
-  transform: translateY(0) translateZ(0);
-}
 
 .title {
   margin: 0;
@@ -274,7 +270,8 @@ a {
 .description {
   margin: 0;
   padding: 0 24px 24px;
-  font-size: 18px;
+  font-size: 30px;
+  
   line-height: 1.5;
 }
 
@@ -294,10 +291,6 @@ a {
   background-size: cover;
 }
 
-.card2:hover .info,
-.card2:hover .info:before {
-  transform: translateY(0) translateZ(0);
-}
 
 .card3 {
   border-radius: 16px;
@@ -312,10 +305,6 @@ a {
   background-size: cover;
 }
 
-.card3:hover .info,
-.card3:hover .info:before {
-  transform: translateY(0) translateZ(0);
-}
 /* .footer {
   display: flex;
   justify-content: center;
