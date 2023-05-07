@@ -1,156 +1,193 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+           <meta charset="UTF-8">
+           <title>Project π</title>
+		   <link rel="icon" type="image/png" href="/images/ProjectPi.png">
+           
+           <base href="" target="_blank">
+           <meta name="keywords" content="" />
+           <meta name="description" content="" />
+           <meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+		<link rel="stylesheet" href="css/fonts.css" />
+		<link rel="stylesheet" href="css/bootstrap.weber.css" />
+		<link rel="stylesheet" href="css/fx.css" />
+		<link rel="stylesheet" href="css/owl.carousel.css" />
+		<link rel="stylesheet" href="css/aos.css" />
+           <link rel="stylesheet" href="css/custom.css" />
+		<link rel="stylesheet" href="css/energy.css" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Energy</title>
-  <link rel="stylesheet" href="energy.css" />
-
-  <link rel="icon" type="image/png" href="/Photos/favicon1.png" />
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', 'G-QTZZLK9HKE');
-  </script>
-</head>
-
-<body>
-  <div class="wrapper">
-    <div class="logo">
-      <a href="#" class="logo" target="_blank">
-        <img src="logo.svg" alt="" />
-      </a>
-    </div>
-    <div class="navbar">
-      <div class="close-nav"><button>×</button></div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#nft">NFT</a></li>
-          <li><a href="product.html">Products</a></li>
-          <li><a href="index.html#team">Team</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="menu-bar">
-      <button><i></i></button>
-    </div>
-  </div>
-
-  <div class="container">
-    <div class="text-box1">
-      <span class="s1">Energy Usage Per Pi</span>
-      <h1>
-        Assuming a power consumption of 15 Watts <br />
-        and operating 24 hours a day, every day,<br />
-        the energy consumption can be calculated as follows:
-      </h1>
-      <p>
-        E(kWh/day) = P(W) × t(h/day) / 1000(W/kW)<br />
-        E(kWh/day) = 15(W) × 24(h/day) / 1000(W/kW) = 0.360(kWh/day)
-      </p>
-    </div>
-    <div class="text-box2">
-      <h1>
-        ...And the cost of running the Raspberry Pi<br />
-        node can be calculated as follows:
-      </h1>
-      <p>
-        Cost($/day) = E(kWh/day) × Cost(cent/kWh) / 100(cent/$)<br />
-        Cost($/day) = 0.360(kWh/day) × 14(cent/kWh) / 100(cent/$) =
-        $0.0504($/day)
-      </p>
-    </div>
-    <div class="text-box3">
-      <h1>
-        So, at 14 cents per kilowatt hour, <br />
-        the daily cost of running a Raspberry Pi <br />
-        node would be approximately $0.0504, or<br />
-        $1.512 per month, and $18.396 per year.
-      </h1>
-    </div>
-  </div>
-
-  <footer>
-    <div class="row primary">
-      <div class="column about">
-
-        <img class="f-logo" src="f-logo.png" alt="">
-
-      </div>
-
-      <div class="column links">
-
-
-        <ul>
-
-
-          <li>
-            <a href="https://project-pi.gitbook.io/documentation/welcome-to-project-pi/what-is-project-pi"
-              target="_blank">Documentation </a>
-          </li>
-          <li>
-            <a href="contact.html" target="_blank">Socials</a>
-          </li>
-          <li>
-            <a href="energy.html" target="_blank">Energy</a>
-          </li>
-        </ul>
-
-      </div>
-
-
-      <div class="column links">
-
-        <ul>
-          <li>
-            <a href="faq.html" target="_blank">F.A.Q</a>
-          </li>
-          <li>
-            <a href="https://project-pi.gitbook.io/documentation/compliance/terms-of-service" target="_blank">Terms Of
-              Service</a>
-          </li>
-          <li>
-            <a href="https://discord.gg/xcZcsdkATY" target="_blank">Support</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="row copyright">
-      <p>Copyright &copy; 2023 project π</p>
-    </div>
-  </footer>
-  <script>
-    const theBody = document.querySelector("body");
-    const openNav = document.querySelector(".menu-bar button");
-    const closeNav = document.querySelector(".close-nav button");
-    const Navbar = document.querySelector(".navbar");
-
-    function bodyScroll() {
-      if (Navbar.classList.contains("show")) {
-        theBody.classList.add("hide-scroll");
-      } else if (theBody.classList.contains("hide-scroll")) {
-        theBody.classList.remove("hide-scroll");
-      }
-    }
-
-    function showHide() {
-      Navbar.classList.toggle("show");
-      bodyScroll();
-    }
-
-    openNav.onclick = showHide;
-    closeNav.onclick = showHide;
-  </script>
-</body>
-
+       </head>
+           <body class="dark-page">
+		<div id="wrap">
+			<nav id="nav-logo-menu-2" class="navbar navbar-expand-lg shadow sticky-top dark fixed-top">
+    			<div class="container">
+        			<div class="row align-items-center">
+            			<div class="col-auto mr-auto">
+                			<a class="navbar-brand" href="index.html" target="_self">
+                        			<img src="images/ProjectPiLogo.png" class="mw-100" alt="logo" srcset="" height="30px">
+                    			</a>
+            			</div>
+            			<div class="col-auto hidden-lg">
+                			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".main-menu-collapse" aria-controls="navbarMenuContent" aria-expanded="true" aria-label="Toggle navigation"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+            			</div>
+            			<div class="col-lg-auto navbar-collapse main-menu-collapse collapse show" style="">
+                			<ul class="navbar-nav ml-auto" style="">
+                    			<li class="nav-item">
+                        			<a class="nav-link" href="index.html" style="overflow: visible;" target="_self"><span class="text-uppercase">Home</span><br></a>
+                    			</li><li class="nav-item">
+                        			<a class="nav-link" href="nft.html" style="overflow: visible;" target="_self"><span class="text-uppercase">NFT</span></a>
+                    			</li><li class="nav-item">
+                        			<a class="nav-link smooth" href="projecthub.html" style="" target="_self"><span style="text-transform: uppercase;" class="">HUB</span></a>
+                    			</li>
+                    			<li class="nav-item">
+                        			<a class="nav-link smooth" href="product.html" style="overflow: visible;" target="_self"><span class="text-uppercase">Products</span></a>
+                    			</li>
+                    			<li class="nav-item">
+                        			<a class="nav-link smooth" href="team.html" style="overflow: visible;" target="_self"><span class="text-uppercase">Team</span></a>
+                    			</li>
+                    			<li class="nav-item">
+                        			<a class="nav-link smooth" href="contact.html" style="overflow: visible;" target="_self"><span class="text-uppercase">Contact Us</span></a>
+                    			</li><li class="nav-item">
+                        			<a class="nav-link smooth" href="about.html" style="" target="_self"><span class="text-uppercase">About Us</span></a>
+                    			</li><li class="nav-item">
+                        			<a class="nav-link smooth" href="faq.html" style="overflow: visible;" target="_self"><span class="text-uppercase">FAQ</span></a>
+                    			</li>
+                			</ul>
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</nav><header id="header-breadcrump" class="pt-50 pb-50 pt-md-100 pb-md-100 light">
+    			<div class="container">
+        			<div class="row align-items-center">
+            			<div class="col-md" style="z-index: 10;">
+                			<h3 class="text-center fx-text-3d" style="overflow: visible; color: rgb(255, 255, 255); font-family: &quot;Montserrat&quot;;"><strong class="">Project Pi is a Blockchain IoT company<br>that provides secure and reliable access to blockchain networks.</strong></h3>
+                
+            			</div>
+            			<div class="col-md-auto">
+                
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</header><section id="desc-img-text-9" class="pt-75 pb-75 pt-md-100 pb-md-100 dark">
+    			<div class="container">
+        			<div class="row align-items-center">
+            			<div class="col-md-6 col-lg-5 order-md-2" style="">
+                			<h3 class="fx-text-3d" style=""><strong class="">Energy Usage Per Pi</strong></h3>
+                			<svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 0 100 20" width="100" class="mb-30 svg-secondary"><path d="m0 9h100v2h-100z" fill-rule="evenodd"></path></svg>
+                			<p class="mb-30" style="">Assuming a power consumption of 15 Watts<br>
+and operating 24 hours a day, every day,
+the energy consumption can be calculated as follows:</p>
+                			<ul class="list-unstyled padding-x2-list separate-list mb-50" style="">
+                    			<li class="" style="">E(kWh/day) = P(W) × t(h/day) / 1000(W/kW)<br>
+E(kWh/day) = 15(W) × 24(h/day) / 1000(W/kW) = 0.360(kWh/day)</li>
+                    			<li class="" style="">And the cost of running the Raspberry Pi<br>
+node can be calculated as follows:</li>
+                    			<li class="">Cost($/day) = E(kWh/day) × Cost(cent/kWh) / 100(cent/$)<br>
+Cost($/day) = 0.360(kWh/day) × 14(cent/kWh) / 100(cent/$) = $0.0504($/day)</li>
+                    			<li class="">So, at 14 cents per kilowatt hour,<br>
+the daily cost of running a Raspberry Pi
+node would be approximately $0.0504, or
+$1.512 per month, and $18.396 per year.</li>
+                			</ul>
+                
+            			</div>
+            			<div class="col-md-6 mr-auto order-md-1 text-center">
+                			<div class="content-box d-inline-block">
+                    			<img class="mw-100 mt-50 mt-lg-0 shadow" src="images/Pi.png" alt="image" srcset="">
+                			</div>
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</section><footer id="footer-text-img" class="pt-75 pb-30 dark">
+    			<div class="container">
+        			<div class="row">
+            			<div class="col-md mb-50" style="z-index: 10;">
+                			<h4 class="mb-20 fx-text-3d" style="overflow: visible;"><strong class="">Products</strong></h4>
+                			<ul class="list-unstyled padding-list">
+                    			<li class="" style=""><a href="https://project-pi.gitbook.io/documentation/welcome-to-project-pi/transparency" class="smooth" style="" target="_blank">About</a></li>
+                    			<li class="" style=""><a href="product.html" class="smooth" style="" target="_self">Pricing</a></li>
+                    			<li class="" style=""><a href="nft.html" class="smooth" style="">NFT</a></li>
+                    			<li class="" style=""><a href="https://project-pi.gitbook.io/documentation/customer-guides/presearch-node-instructions" class="smooth" style="" target="_blank">Documentation</a></li>
+                    			<li class="" style=""><a href="energy.html" class="smooth" style="" target="_self">Energy</a></li>
+                			</ul>
+            			</div>
+            			<div class="col-md mb-50" style="z-index: 10;">
+                			<h4 class="mb-20 fx-text-3d" style="overflow: visible;"><strong>Company</strong></h4>
+                
+            			<ul class="list-unstyled padding-list">
+                    			<li class=""><a href="faq.html" class="smooth" target="_self">FAQ</a></li>
+                    			<li class=""><a href="https://discord.com/invite/xcZcsdkATY" target="_blank" class="smooth">Support</a></li>
+                    			<li class=""><a href="#" class="smooth" target="_blank">Terms of Service</a></li>
+                    
+                    
+                			</ul></div>
+            			<div class="col-md mb-50">
+                
+							<a href="https://docs.presearch.io/nodes/preberry" class="smooth" target="_blank"><img class="mw-100" alt="img" src="images/Presearch.png" srcset=""></a></div>
+            			<div class="col-md mb-50" style="">
+                			<h4 class="mb-20 fx-text-3d"><b class="">Presearch</b></h4>
+                			<p class="text-secondary" style="">As the worldwide distributors of Presearch nodes, we serve as the essential physical nodes connecting users across the globe.&nbsp;🌐</p>
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</footer><footer id="footer-logo-text-social" class="pt-30 pb-30 text-center text-md-left dark">
+    			<div class="container-fluid">
+        			<div class="row align-items-center">
+            			<div class="col-md order-md-2">
+                			<ul class="list-unstyled list-inline padding-list mb-20 mb-md-0 fx-text-3d">
+                    			<li class=""><a href="#" class="">© 2023 Project Pi<br></a></li>
+                    
+                    
+                    
+                			</ul>
+            			</div>
+            			<div class="col-md-auto order-md-3">
+                			<div class="inline-group mb-20 mb-md-0">
+                    			<a href="https://discord.com/invite/tmTvXDE7y3" class="smooth" target="_blank"><img src="images/Discord.png" class="icon svg-default" alt="" srcset="" width="16" height="16"></a>
+                    			<a href="https://www.linkedin.com/company/projectpi314/" class="smooth" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default" srcset=""><path d="m16 15.5454545h-3.5362183v-5.1133089c0-1.3384016-.5531514-2.25209123-1.7695202-2.25209123-.93038568 0-1.44778925.61657751-1.6886171 1.21080175-.09031044.21328738-.07619943.5103995-.07619943.80751158v5.3470868h-3.50329257s.04515522-9.05772842 0-9.88107361h3.50329257v1.55075762c.20696143-.67804897 1.32643463-1.64575899 3.11288803-1.64575899 2.2163688 0 3.957667 1.42129498 3.957667 4.48182928zm-14.11665099-11.11702278h-.02257761c-1.12888052 0-1.8607714-.75535401-1.8607714-1.71281878 0-.97609249.75352775-1.71561294 1.90498589-1.71561294 1.1505174 0 1.8579492.73765768 1.88052681 1.71281878 0 .95746477-.73000941 1.71561294-1.90216369 1.71561294zm-1.47977422 1.23594917h3.11853245v9.88107361h-3.11853245z" fill="#007ebb" fill-rule="evenodd" class=""></path></svg></a>
+                    
+                    			<a href="https://twitter.com/ProjectPi314" class="smooth" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 0 16 16" width="16" class="icon svg-default" srcset=""><path d="m16 2.57842783c-.5878969.26772602-1.2208722.44877814-1.8848389.52967377.6780537-.41603467 1.1983331-1.07571927 1.4434466-1.86156254-.6348535.38521729-1.3363855.66546287-2.0858132.81569761-.5972882-.65390635-1.4509597-1.06223667-2.3957269-1.06223667-1.81158659 0-3.28132891 1.50716263-3.28132891 3.36583604 0 .26387384.02817397.52004334.08452192.7665824-2.72817984-.14060431-5.14644597-1.47923438-6.76644949-3.51799687-.28267888.49885639-.44420966 1.07764536-.44420966 1.69399302 0 1.16720838.57944473 2.19766462 1.460351 2.80149272-.53718378-.01637174-1.04431532-.16949561-1.48758585-.41988685v.04141086c0 1.63139521 1.13165464 2.99217528 2.6342666 3.30034911-.27516582.07896954-.56535775.11845431-.86494101.11845431-.21130481 0-.41791395-.02022391-.61794917-.05970868.41791395 1.33670394 1.62939485 2.31034064 3.06626754 2.33634284-1.12320245.9033345-2.53941422 1.4416757-4.07677408 1.4416757-.26483536 0-.52685332-.0154087-.78323649-.0462261 1.45283794.9534128 3.17896343 1.5110148 5.03187181 1.5110148 6.03862179 0 9.33967249-5.12820509 9.33967249-9.57650171 0-.14638257-.0028174-.29276514-.0084522-.43625858.6414275-.47478031 1.198333-1.06705188 1.6369079-1.74214518" fill="#00aaec" fill-rule="evenodd" class=""></path></svg></a>
+                    
+                			</div>
+            			</div>
+            			<div class="col-md-auto order-md-1">
+                			<img class="mw-100 mt-30 mt-md-0" src="images/ProjectPiLogo.png" alt="logo" srcset="" height="60px">
+            			</div>
+        			</div>
+    			</div>
+    			<div class="bg-wrap">
+        			<div class="bg"></div>
+    			</div>
+			</footer>
+		</div>
+		<footer></footer>
+		<div class="modal-container"></div>
+		
+		
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBeKvv6T-rQNQS2gjAH2vlJDfgZnwhnLN4"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/owl.carousel.js"></script>
+		<script src="js/jquery.validate.min.js"></script>
+		<script src="js/jquery.smooth-scroll.min.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/countUp-jquery.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/custom.js"></script>
+		<script src="js/energy.js"></script>
+	</body>
 </html>

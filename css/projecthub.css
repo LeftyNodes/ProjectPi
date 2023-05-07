@@ -1,0 +1,17 @@
+
+#nav-logo-menu-2 .bg-wrap {
+	background: #000000;
+}#action-btn-text .bg-wrap {
+    background: #444444;
+}
+#media-text-icon .bg {
+    background-image: url('../images/bg-71.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity:0.25;
+}
+#footer-logo-text .bg {}
+#footer-logo-text-social .bg-wrap {
+	background: #000000;
+}

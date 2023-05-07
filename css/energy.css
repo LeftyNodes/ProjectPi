@@ -1,0 +1,17 @@
+
+#nav-logo-menu-2 .bg-wrap {
+	background: #000000;
+}
+#header-breadcrump .bg-wrap {
+	background: #000000;
+}#desc-img-text-9 .bg {
+    background-image: url('../images/NodeEnergy.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    opacity:0.15;
+}
+#footer-logo-text .bg {}
+#footer-logo-text-social .bg-wrap {
+	background: #000000;
+}

@@ -1,0 +1,19 @@
+
+#nav-logo-menu-2 .bg-wrap {
+	background: #000000;
+}
+#header-breadcrump .bg-wrap {
+	background: #000000;
+}
+#benefits-3col-9 .bg {}#benefits-5col-counter .bg {
+    background-image: url('../images/Decentralization.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity:0.25;
+}
+
+#footer-logo-text .bg {}
+#footer-logo-text-social .bg-wrap {
+	background: #000000;
+}
