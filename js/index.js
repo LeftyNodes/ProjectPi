@@ -14,9 +14,13 @@
 
 window.addEventListener('load', function() {
 
-$("#popup-text").modal("show");
-
-
-
-
-});
+	$("#popup-text-social").modal("show");
+	
+	//countdown-timer
+	setTimeout(function () {
+		$("#popup-text-social").modal("show");
+	}, 3);
+	//countdown-timer-end
+	
+	
+	});
