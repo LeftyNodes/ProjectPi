@@ -1,0 +1,61 @@
+
+.anter-api {
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.block-anter-loader {
+    position: relative;
+    width: 260px;
+    height: 260px;
+    left: 50px;  /* Adjust this value to shift everything to the right */
+    top: 30px;   /* Adjust this value to shift everything down */
+
+}
+
+.block-anter-loader__box {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: lightgrey;
+    border-radius: 20%;
+    transition: transform .5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+.small-bbox {  /* Updated class name */
+    width: 15px;
+    height: 15px;
+}
+
+#bbox1 {
+    top: 40%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+#bbox2 {
+    top: 0;
+    left: 40%;
+    transform: translate(-50%, 0);
+}
+
+#bbox3 {
+    top: 40%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+}
+
+#bbox4 {
+    bottom: 20%;
+    left: 40%;
+    transform: translate(-50%, 0);
+}
+
+#bbox5 {
+    top: 40%;
+    right: 20%;
+    transform: translate(0, -50%);
+}
