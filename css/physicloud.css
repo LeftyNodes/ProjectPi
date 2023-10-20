@@ -1,0 +1,54 @@
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+body {
+    background: #1c2326;
+}
+
+.banter-loader2 {
+    position: absolute;
+    left: 50%;
+    top: 140%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-between; /* Adjusts the position of boxes */
+    width: 260px;  /* Adjust width to give enough space */
+}
+
+.small-box-container2 {
+    display: flex;
+    flex-direction: column;  /* Stack the boxes vertically */
+}
+
+.banter-loader__box2 {
+    width: 35px;
+    height: 35px;
+    margin-bottom: 6px;  /* Adjust margin to bottom for vertical spacing */
+    position: relative;
+    border-radius: 20%;
+}
+
+#box1, #box2 {
+    background-color: white;
+}
+
+#box3 {
+    width: 75px;  /* Larger size for box3 */
+    height: 75px;  /* Larger size for box3 */
+    background-color: white;
+}
+
+.small-box {
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    background-color: red;
+}
+
+.small-box-shooter2 {
+    position: absolute;
+    top: 50%;
+    left: calc(50% - 17.5px);  /* Centering the shooter container */
+    transform: translateY(-50%);
+}
