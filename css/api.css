@@ -11,8 +11,13 @@
     position: relative;
     width: 260px;
     height: 260px;
-    left: 50px;  /* Adjust this value to shift everything to the right */
+    left: 30px;  /* Adjust this value to shift everything to the right */
     top: 30px;   /* Adjust this value to shift everything down */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
