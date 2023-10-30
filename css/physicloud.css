@@ -2,23 +2,31 @@
     box-sizing: border-box;
 }
 
-body {
+/* body {
     background: #1c2326;
-}
+} */
 
 .banter-loader2 {
-    position: absolute;
+    position: relative;
     left: 50%;
-    top: 140%;
-    transform: translate(-50%, -50%);
+    top: auto;
+    transform: translateX(-50%);
     display: flex;
     justify-content: space-between; /* Adjusts the position of boxes */
     width: 260px;  /* Adjust width to give enough space */
+    margin-top: 100px;
+   
+   
 }
 
 .small-box-container2 {
     display: flex;
     flex-direction: column;  /* Stack the boxes vertically */
+    height:270px;
+    width: 300px;
+    position: relative;
+    
+    
 }
 
 .banter-loader__box2 {
@@ -34,7 +42,7 @@ body {
 }
 
 #box3 {
-    width: 75px;  /* Larger size for box3 */
+    width: 125px;  /* Larger size for box3 */
     height: 75px;  /* Larger size for box3 */
     background-color: white;
 }
@@ -51,4 +59,14 @@ body {
     top: 50%;
     left: calc(50% - 17.5px);  /* Centering the shooter container */
     transform: translateY(-50%);
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 480px) {
+    .banter-loader2 {
+        margin-top: 30px; 
+        width: 80%; /* Take up most of the screen width */
+        flex-direction: column; /* To stack elements vertically */
+        align-items: center; /* Center align for vertical stacking */
+    }
 }
