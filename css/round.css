@@ -58,18 +58,7 @@
     50% { transform: translate(-50%, -50%); }
 }
 
-/* Mobile styles */
-@media only screen and (max-width: 480px) {
-    .banter-loader-container {
-        width: 80%;
-        height: 80%;
-    }
 
-    .banter-loader-container .banter-loader__box {
-        width: 20px;
-        height: 20px;
-    }
-    
     /* Adapt the translate value for mobile layout */
 .banter-loader__box:nth-child(1) { transform: rotate(0deg) translate(80px) rotate(0deg); }
 .banter-loader__box:nth-child(2) { transform: rotate(22.5deg) translate(80px) rotate(-22.5deg); }
@@ -87,4 +76,3 @@
 .banter-loader__box:nth-child(14) { transform: rotate(292.5deg) translate(100px) rotate(-292.5deg); }
 .banter-loader__box:nth-child(15) { transform: rotate(315deg) translate(100px) rotate(-315deg); }
 .banter-loader__box:nth-child(16) { transform: rotate(337.5deg) translate(100px) rotate(-337.5deg); }
-}
