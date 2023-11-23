@@ -70,3 +70,49 @@
         align-items: center; /* Center align for vertical stacking */
     }
 }
+/* Extra Small Devices, Phones (e.g., iPhone SE) */
+@media only screen and (max-width: 320px) {
+    .banter-loader2 {
+        margin-top: 20px; 
+        width: 90%; 
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+/* Small Devices, Phones */
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+    .banter-loader2 {
+        margin-top: 30px; 
+        width: 80%; 
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+/* Medium Devices, Tablets */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .banter-loader2 {
+        margin-top: 50px; 
+        width: 70%; 
+        flex-direction: column; 
+        align-items: center;
+    }
+}
+
+/* Large Devices, Desktops */
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .banter-loader2 {
+        margin-top: 70px; 
+        width: 60%; 
+        flex-direction: row; /* Back to horizontal layout for larger screens */
+    }
+}
+
+/* Extra Large Devices, Large Desktops */
+@media only screen and (min-width: 1025px) {
+    .banter-loader2 {
+        margin-top: 100px; 
+        width: 260px; /* Original width for the largest screens */
+    }
+}

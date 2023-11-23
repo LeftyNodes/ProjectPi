@@ -15598,6 +15598,361 @@ ul a.rsswidget {
 .swiper-container .dz-card.style-1 {
   margin: 15px; }
 
+  .main-bnr-pls {
+    height: 920px;
+  position: relative;
+  background-image: url(../images/background/bg69.jpg);
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  padding-top: 100px;
+  padding-bottom: 30px; }
+  .main-bnr-pls .container,
+  .main-bnr-pls .container-fluid,
+  .main-bnr-pls .container-sm,
+  .main-bnr-pls .container-md,
+  .main-bnr-pls .container-lg,
+  .main-bnr-pls .container-xl {
+    position: relative;
+    z-index: 3; }
+  .main-bnr-pls h1, .main-bnr .h1 {
+    font-size: 70px;
+    color: #fff;
+    line-height: 1.4;
+    margin-bottom: 10px;
+    position: relative; }
+    .main-bnr-pls h1 .text-line, .main-bnr .h1 .text-line {
+      position: relative; }
+      .main-bnr-pls h1 .text-line:after, .main-bnr .h1 .text-line:after {
+        content: "";
+        top: 75px;
+        z-index: -1;
+        right: 5px;
+        height: 34px;
+        width: 380px;
+        position: absolute;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: left top;
+        background-image: url(../images/home-banner/shape2.svg); }
+  .main-bnr-pls .text {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 70px;
+    line-height: 1.7;
+    max-width: 600px; }
+    @media only screen and (max-width: 1191px) {
+      .main-bnr-pls .text {
+        font-size: 18px;
+        margin-bottom: 50px; } }
+    @media only screen and (max-width: 991px) {
+      .main-bnr-pls .text {
+        font-size: 15px;
+        margin-bottom: 30px; } }
+    @media only screen and (max-width: 767px) {
+      .main-bnr-pls .text {
+        max-width: 375px; } }
+  .main-bnr-pls .shape1 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0; }
+    @media only screen and (max-width: 1480px) {
+      .main-bnr-pls .shape1 {
+        width: 200px; } }
+    @media only screen and (max-width: 1191px) {
+      .main-bnr-pls .shape1 {
+        width: 150px; } }
+    @media only screen and (max-width: 575px) {
+      .main-bnr-pls .shape1 {
+        width: 100px; } }
+  @media only screen and (max-width: 1280px) {
+    .main-bnr-pls {
+      height: 820px; }
+      .main-bnr-pls h1, .main-bnr .h1 {
+        font-size: 62px; }
+        .main-bnr-pls h1 .text-line:after, .main-bnr-pls .h1 .text-line:after {
+          top: 65px;
+          width: 335px; } }
+  @media only screen and (max-width: 1191px) {
+    .main-bnr-pls {
+      height: 720px; }
+      .main-bnr-pls h1, .main-bnr .h1 {
+        font-size: 45px; }
+        .main-bnr-pls h1 .text-line:after, .main-bnr-pls .h1 .text-line:after {
+          top: 48px;
+          width: 245px; } }
+  @media only screen and (max-width: 991px) {
+    .main-bnr-pls {
+      height: 580px;
+      padding-top: 70px; }
+      .main-bnr-pls h1, .main-bnr-pls .h1 {
+        font-size: 34px;
+        margin-bottom: 5px; }
+        .main-bnr h1 .text-line:after, .main-bnr .h1 .text-line:after {
+          top: 37px;
+          right: 0px;
+          width: 190px; }
+      .main-bnr .video-btn {
+        display: none; } }
+  @media only screen and (max-width: 767px) {
+    .main-bnr {
+      height: auto;
+      padding-top: 135px;
+      padding-bottom: 50px; } }
+  @media only screen and (max-width: 575px) {
+    .main-bnr {
+      padding-top: 100px; }
+      .main-bnr h1, .main-bnr .h1 {
+        font-size: 30px; }
+        .main-bnr h1 .text-line:after, .main-bnr .h1 .text-line:after {
+          top: 32px;
+          width: 170px; } }
+
+.dz-bnr-inr .shape1 {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0; }
+  @media only screen and (max-width: 1480px) {
+    .dz-bnr-inr .shape1 {
+      width: 150px; } }
+  @media only screen and (max-width: 1191px) {
+    .dz-bnr-inr .shape1 {
+      width: 150px; } }
+  @media only screen and (max-width: 575px) {
+    .dz-bnr-inr .shape1 {
+      width: 100px; } }
+
+.banner-media {
+  position: relative;
+  width: 610px;
+  min-width: 610px;
+  height: 585px;
+  -webkit-animation: aniBnrMedia 5s infinite;
+  animation: aniBnrMedia 5s infinite; }
+  @media only screen and (max-width: 1480px) {
+    .banner-media {
+      width: 580px;
+      min-width: 580px;
+      height: 555px; } }
+  @media only screen and (max-width: 1380px) {
+    .banner-media {
+      width: 525px;
+      min-width: 525px;
+      height: 500px;
+      margin-left: -30px; } }
+  @media only screen and (max-width: 1191px) {
+    .banner-media {
+      width: 475px;
+      min-width: 475px;
+      height: 450px;
+      margin-left: -10px; } }
+  @media only screen and (max-width: 991px) {
+    .banner-media {
+      width: 275px;
+      min-width: 275px;
+      height: 270px;
+      margin-left: 20px; } }
+  @media only screen and (max-width: 767px) {
+    .banner-media {
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 30px; } }
+  .banner-media .media {
+    width: 100%;
+    min-width: 100%; }
+  .banner-media [class*="shape"] {
+    position: absolute; }
+  .banner-media .shape1 {
+    width: 90px;
+    top: 40px;
+    right: 15px;
+    left: auto; }
+    @media only screen and (max-width: 1380px) {
+      .banner-media .shape1 {
+        width: 50px; } }
+    @media only screen and (max-width: 991px) {
+      .banner-media .shape1 {
+        top: 25px;
+        width: 35px; } }
+  .banner-media .shape2 {
+    left: 210px;
+    top: 0px;
+    width: 80px;
+    -webkit-animation: dZwobble 4s infinite;
+    animation: dZwobble 4s infinite; }
+    @media only screen and (max-width: 1380px) {
+      .banner-media .shape2 {
+        left: 200px;
+        width: 50px; } }
+    @media only screen and (max-width: 991px) {
+      .banner-media .shape2 {
+        left: 100px;
+        width: 25px; } }
+  .banner-media .shape3 {
+    left: 0;
+    top: 230px;
+    width: 100px;
+    -webkit-animation: dZwobble 5s infinite;
+    animation: dZwobble 5s infinite; }
+    @media only screen and (max-width: 1380px) {
+      .banner-media .shape3 {
+        width: 50px;
+        left: 30px; } }
+    @media only screen and (max-width: 991px) {
+      .banner-media .shape3 {
+        width: 25px;
+        left: 30px;
+        top: 120px; } }
+  .banner-media .shape4 {
+    top: 0;
+    left: 360px;
+    width: 60px;
+    -webkit-animation: aniBnrShape4 5s infinite;
+    animation: aniBnrShape4 5s infinite; }
+    @media only screen and (max-width: 1380px) {
+      .banner-media .shape4 {
+        left: 320px;
+        width: 40px; } }
+    @media only screen and (max-width: 991px) {
+      .banner-media .shape4 {
+        left: 175px;
+        width: 20px; } }
+  .banner-media .shape5 {
+    width: 35px;
+    top: 180px;
+    right: 0;
+    -webkit-animation: aniBnrShape5 3s infinite linear;
+    animation: aniBnrShape5 3s infinite linear; }
+    @media only screen and (max-width: 1380px) {
+      .banner-media .shape5 {
+        width: 25px; } }
+    @media only screen and (max-width: 991px) {
+      .banner-media .shape5 {
+        width: 15px;
+        top: 90px; } }
+  .banner-media .shape6 {
+    left: 40px;
+    bottom: 90px;
+    width: 60px;
+    -webkit-animation: aniBnrShape7 12s infinite linear;
+    animation: aniBnrShape7 12s infinite linear; }
+    @media only screen and (max-width: 1380px) {
+      .banner-media .shape6 {
+        width: 40px; } }
+    @media only screen and (max-width: 991px) {
+      .banner-media .shape6 {
+        width: 25px;
+        left: 30px;
+        bottom: 15px; } }
+  .banner-media .shape7 {
+    bottom: 210px;
+    right: 0;
+    width: 35px;
+    -webkit-animation: aniBnrShape7 12s infinite linear;
+    animation: aniBnrShape7 12s infinite linear; }
+    @media only screen and (max-width: 1380px) {
+      .banner-media .shape7 {
+        width: 25px; } }
+    @media only screen and (max-width: 991px) {
+      .banner-media .shape7 {
+        bottom: 95px;
+        width: 20px; } }
+
+@-webkit-keyframes dZwobble {
+  0% {
+    -webkit-transform: rotate(-1deg) translate(-5px, -5px);
+    transform: rotate(-1deg) translate(-5px, -5px); }
+  50% {
+    -webkit-transform: rotate(1deg) translate(5px, 5px);
+    transform: rotate(1deg) translate(5px, 5px); }
+  100% {
+    -webkit-transform: rotate(-1deg) translate(-5px, -5px);
+    transform: rotate(-1deg) translate(-5px, -5px); } }
+
+@-webkit-keyframes aniBnrShape2 {
+  100% {
+    -webkit-transform: rotateY(360deg);
+    transform: rotateY(360deg); } }
+
+@-webkit-keyframes aniBnrShape3 {
+  100% {
+    -webkit-transform: rotateX(-360deg);
+    transform: rotateX(-360deg); } }
+
+@-webkit-keyframes aniBnrShape4 {
+  0% {
+    -webkit-transform: rotate(0) translate(2px, 2px) scale(1);
+    transform: rotate(0) translate(2px, 2px) scale(1); }
+  50% {
+    -webkit-transform: rotate(50deg) translate(2px, 2px) scale(1.2);
+    transform: rotate(50deg) translate(2px, 2px) scale(1.2); }
+  100% {
+    -webkit-transform: rotate(0) translate(2px, 2px) scale(1);
+    transform: rotate(0) translate(2px, 2px) scale(1); } }
+
+@-webkit-keyframes aniBnrShape5 {
+  0% {
+    -webkit-transform: skewY(0);
+    transform: skewY(0); }
+  50% {
+    -webkit-transform: skewY(20deg);
+    transform: skewY(20deg); }
+  100% {
+    -webkit-transform: skewY(0);
+    transform: skewY(0); } }
+
+@-webkit-keyframes aniBnrShape7 {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@-webkit-keyframes aniBnrMedia {
+  0% {
+    -webkit-transform: rotate(1deg) translate(2px, 2px);
+    transform: rotate(1deg) translate(2px, 2px); }
+  50% {
+    -webkit-transform: rotate(-1deg) translate(-2px, -2px);
+    transform: rotate(-1deg) translate(-2px, -2px); }
+  100% {
+    -webkit-transform: rotate(1deg) translate(2px, 2px);
+    transform: rotate(1deg) translate(2px, 2px); } }
+
+.list-style-1 {
+  counter-reset: li; }
+  .list-style-1 li {
+    display: block;
+    position: relative;
+    font-size: 20px;
+    font-weight: 500;
+    color: #527D95;
+    padding: 6px 10px 6px 50px; }
+    @media only screen and (max-width: 767px) {
+      .list-style-1 li {
+        font-size: 18px; } }
+    @media only screen and (max-width: 575px) {
+      .list-style-1 li {
+        font-size: 16px;
+        padding: 6px 10px 6px 45px; } }
+    .list-style-1 li:after {
+      content: counter(li);
+      background-image: url(../images/shape/polygon7.svg);
+      height: 35px;
+      width: 35px;
+      position: absolute;
+      left: 0;
+      background-position: center -0.5px;
+      counter-increment: li;
+      text-align: center;
+      line-height: 35px;
+      color: #fff;
+      font-size: 16px; }
+      @media only screen and (max-width: 575px) {
+        .list-style-1 li:after {
+          top: 2px; } }
+    
+  
 .main-bnr {
   height: 920px;
   position: relative;
@@ -16238,6 +16593,7 @@ ul a.rsswidget {
   transition: all 0.8s;
   margin-right: 20px;
   position: relative; }
+  
   .crypto-box .crypto-media {
     width: 65px;
     height: 65px;
@@ -19272,4 +19628,79 @@ html {
   -webkit-animation: arrows 1s ease-in-out infinite alternate, p 2s ease infinite alternate;
           animation: arrows 1s ease-in-out infinite alternate, p 2s ease infinite alternate;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.content-bx {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inner-content {
+  /* Styles for your content */
+}
+
+.slider-main-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slider-inner-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    width: 100%; /* Make the slide the full width of its container */
+    display: none; /* Hide all slides by default */
+    justify-content: center; /* Center the image inside the slide */
+    align-items: center; /* This will vertically align the image if you use `display: flex;` */
+}
+
+.slide.active {
+    display: flex; /* Using flex to center the image */
+}
+
+.slide img {
+    max-width: 100%; /* Make the image responsive */
+    max-height: 100%; /* Limit the image size to the container size */
+    object-fit: contain; /* This will make sure the image is contained within its element, preserving aspect ratio */
+}
+
+.controls {
+    position: absolute;
+    width: 100%;
+    top: 50%; /* Position the controls vertically centered */
+    transform: translateY(-50%); /* Align the controls correctly */
+    display: flex;
+    justify-content: space-between; /* This will move the arrows to the far edges */
+    padding: 0 10px; /* Add some padding so the arrows don't touch the edges */
+}
+
+.prev, .next {
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.5); /* Optional: This can make the arrows more visible on top of images */
+    border-radius: 50%; /* Optional: This makes the clickable area round */
+}
+
+
+.prev {
+  float: left;
+  margin-left: 10px;
+}
+
+.next {
+  float: right;
+  margin-right: 10px;
+}
+
+
+
+
+
 
