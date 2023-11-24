@@ -1,11 +1,4 @@
-/**
-	Template Name 	 : FinLab
-	File Name	     : custom.js
-	Core script to handle the entire theme and core functions
-	
-**/
-
-var FinLab = function(){
+var ProjectPi = function(){
 	/* Search Bar ============ */
 	siteUrl = '';
 	
@@ -439,7 +432,7 @@ var FinLab = function(){
 jQuery(document).ready(function() {
     'use strict';
 	
-	FinLab.init();
+	ProjectPi.init();
 	
 	jQuery('.navicon').on('click',function(){
 		$(this).toggleClass('open');
@@ -452,7 +445,7 @@ jQuery(document).ready(function() {
 jQuery(window).on('load',function () {
 	'use strict'; 
 	
-	FinLab.load();
+	ProjectPi.load();
 	
 	setTimeout(function(){
 		jQuery('#loading-area').fadeOut();
@@ -465,6 +458,6 @@ jQuery(window).on('load',function () {
 /* Window Resize START */
 jQuery(window).on('resize',function () {
 	'use strict'; 
-	FinLab.resize();
+	ProjectPi.resize();
 });
 /*  Window Resize END */

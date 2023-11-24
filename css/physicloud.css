@@ -20,14 +20,13 @@
 }
 
 .small-box-container2 {
-    display: flex;
-    flex-direction: column;  /* Stack the boxes vertically */
-    height:270px;
-    width: 300px;
-    position: relative;
-    
-    
+    width: 100%; /* Adjust the width to match parent */
+    height: auto; /* Adjust height to be automatic */
+    flex-direction: row; /* Align the boxes horizontally */
+    justify-content: center; /* Center the boxes horizontally */
+    align-items: center; /* Center the boxes vertically */
 }
+
 
 .banter-loader__box2 {
     width: 35px;
@@ -114,5 +113,14 @@
     .banter-loader2 {
         margin-top: 100px; 
         width: 260px; /* Original width for the largest screens */
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .banter-loader2 {
+        width: 100%; /* Adjust the width to fit the screen */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align the children */
+        justify-content: center; /* Center content horizontally and vertically */
     }
 }

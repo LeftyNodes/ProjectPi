@@ -1,7 +1,5 @@
 <?php
 /*
-Template Name: FinLab : Crypto Trading Frontend Bootstrap template
-
 Variable
 	
 	$apiKey : Mail Champ Api
