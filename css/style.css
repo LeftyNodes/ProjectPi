@@ -8020,7 +8020,7 @@ textarea.form-control-lg {
 
 * {
   outline: none;
-  padding: 0; }
+  padding: 3px; }
   *::after {
     margin: 0;
     padding: 0; }
