@@ -1,7 +1,5 @@
 <?php
 /*
-Template Name: FinLab : Crypto Trading Frontend Bootstrap template
-
 Variable
 	$recaptchaSecret : Recaptcha Secret Key
  
@@ -174,7 +172,7 @@ try {
 				exit;
 			}
 			
-			$dzMailSubject = 'FinLab|Contact Form: A Person want to contact';
+			$dzMailSubject = 'ProjectPi|Contact Form: A Person want to contact';
 			$dzMailMessage	= 	"
 								A person want to contact you: <br><br>
 								Name: $dzName<br/>
@@ -281,7 +279,7 @@ try {
 			
 				
 			
-			$dzMailSubject = 'FinLab|Appointment Form: A Person want to contact';
+			$dzMailSubject = 'ProjectPi|Appointment Form: A Person want to contact';
 			$dzMailMessage	= 	"
 								A person want to contact you: <br><br>
 								Name: $dzName<br/>

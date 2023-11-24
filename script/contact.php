@@ -1,7 +1,5 @@
 <?php
 /*
-Template Name: FinLab : Crypto Trading Frontend Bootstrap template
-
 Variable
 	$recaptchaSecret : Recaptcha Secret Key
  
@@ -26,7 +24,7 @@ require('recaptcha-master/src/autoload.php');
 $recaptchaSecret = '<!-- Put Your reCaptcha Secret Key -->';
 
 $dzEmailTo 		= "info@exemple.com";   /* Receiver Email Address */
-$dzEmailFrom    = "FinLab Contact";
+$dzEmailFrom    = "ProjectPi Contact";
 
 
 function pr($value)
@@ -137,7 +135,7 @@ try {
 				exit;
 			}
 			
-			$dzMailSubject = 'FinLab|Contact Form: A Person want to contact';
+			$dzMailSubject = 'ProjectPi|Contact Form: A Person want to contact';
 			$dzMailMessage	= 	"
 								A person want to contact you: <br><br>
 								Name: $dzName<br/>
@@ -245,7 +243,7 @@ try {
 			
 				
 			
-			$dzMailSubject = 'FinLab|Appointment Form: A Person want to contact';
+			$dzMailSubject = 'ProjectPi|Appointment Form: A Person want to contact';
 			$dzMailMessage	= 	"
 								A person want to contact you: <br><br>
 								Name: $dzName<br/>
