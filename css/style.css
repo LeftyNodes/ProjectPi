@@ -8020,7 +8020,7 @@ textarea.form-control-lg {
 
 * {
   outline: none;
-  padding: 3px; }
+  padding: 0; }
   *::after {
     margin: 0;
     padding: 0; }
@@ -18500,6 +18500,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding:3px;
 }
 
 #redblocks > * {
