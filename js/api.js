@@ -42,7 +42,7 @@
         
         document.getElementById('bbox3').style.backgroundColor = '#2196f3';  // Set background color to blue
     
-        console.log('Current Index:', currentIndex);  // Log the current index to the console
+        // console.log('Current Index:', currentIndex);  // Log the current index to the console
     
         currentIndex = (currentIndex + 3) % order.length;  // Increment index based on order array length
         
