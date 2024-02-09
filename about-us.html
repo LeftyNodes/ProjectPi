@@ -21,7 +21,6 @@
     
 	<!-- Favicon icon -->
     <link rel="icon" type="image/png" href="images/ProjectPi.png">
-    
 	<!-- Stylesheet -->
 	<link href="vendor/animate/animate.css" rel="stylesheet">
 	<link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
@@ -29,18 +28,34 @@
     
 	<!-- Custom Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/nodes.css">
+	<link rel="stylesheet" href="css/backed.css">
+	<link rel="stylesheet" href="css/round.css">
+	<link rel="stylesheet" href="css/physicloud.css">
+	<link rel="stylesheet" href="css/api.css">
+	<link rel="stylesheet" href="css/slider.css">
+
+	<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
 	
+
 	<!-- Google Fonts -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-	
+
 	<!-- Start of HubSpot Embed Code -->
 <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/44424969.js"></script>
 <!-- End of HubSpot Embed Code -->
-
-<!-- Google tag (gtag.js) -->
+	<!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-QTZZLK9HKE"></script>
+	<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+<script>
+  hbspt.forms.create({
+    region: "na1",
+    portalId: "44424969",
+    formId: "777620f6-4f2f-4f64-8f36-84150ead4428"
+  });
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -50,9 +65,7 @@
 </script>
 </head>
 <body>
-
-
-<div id="loading-area" class="loading-page-2">
+<div id="loading-area" class="loading-page-1">
 	<div class="loader">
 		<div class="border one"></div>	
 		<div class="border two"></div>	
@@ -64,12 +77,12 @@
 		<div class="border eight"></div>	
 		<div class="border nine"></div>	
 	</div>
-</div>
+</div>  
 
 <div class="page-wraper">
 
 	<!-- Header -->
-	<header class="site-header mo-left header header-transparent">
+	<header class="site-header mo-left header header-transparent ">
 		<!-- Main Header -->
 		<div class="sticky-header main-bar-wraper navbar-expand-lg">
 			<div class="main-bar clearfix ">
@@ -91,7 +104,7 @@
 					<!-- Extra Nav -->
 					<div class="extra-nav">
 						<div class="extra-cell">
-							<a class="btn btn-primary  btn-shadow" target="_blank" href="https://hub.projectpi.xyz">Project Hub</a>
+							<a class="btn btn-primary  btn-shadow" target="_blank" href="https://hub.projectpi.xyz/">Project Hub</a>
 						</div>
 					</div>
 
@@ -103,8 +116,23 @@
 						<ul class="nav navbar-nav navbar navbar-left">	
 							<li><a href="./home">Home</a></li>
 							<li><a href="./about-us">About Us</a></li>
-							<li><a href="https://rdauditors.projectpi.xyz/" target="_blank">Reports</a></li>
+							<li class="dropdown">
+								<a href="#">
+									Reports
+									<!--SVG dropdown icon-->
+									<svg class="icon" width="14" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+										<path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"/>
+									</svg>
+									
+								</a>
+							<!--Start of Dropdown-->
+								<ul class="dropdown-nav">
+									<li><a href="https://rdauditors.projectpi.xyz/" target="_blank" style="color: black;">RD Auditors</a></li>
+									<li><a href="https://sourcehat.projectpi.xyz/" target="_blank" style="color: black;">SourceHat</a></li>
+								</ul>
+							</li>
 							<li><a href="https://docs.projectpi.xyz" target="_blank">Docs</a></li>
+							
 							
 						</ul>
 					</div>
@@ -114,7 +142,6 @@
 		<!-- Main Header End -->
 	</header>
 	<!-- Header End -->
-	
 	
 	<div class="page-content">
 		
