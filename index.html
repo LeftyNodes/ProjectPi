@@ -116,7 +116,21 @@
 						<ul class="nav navbar-nav navbar navbar-left">	
 							<li><a href="./home">Home</a></li>
 							<li><a href="./about-us">About Us</a></li>
-							<li><a href="https://rdauditors.projectpi.xyz/" target="_blank">Reports</a></li>
+							<li class="dropdown">
+								<a href="#">
+									Reports
+									<!--SVG dropdown icon-->
+									<svg class="icon" width="14" height="16" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+										<path d="M151.5 347.8L3.5 201c-4.7-4.7-4.7-12.3 0-17l19.8-19.8c4.7-4.7 12.3-4.7 17 0L160 282.7l119.7-118.5c4.7-4.7 12.3-4.7 17 0l19.8 19.8c4.7 4.7 4.7 12.3 0 17l-148 146.8c-4.7 4.7-12.3 4.7-17 0z"/>
+									</svg>
+									
+								</a>
+							<!--Start of Dropdown-->
+								<ul class="dropdown-nav">
+									<li><a href="https://rdauditors.projectpi.xyz/" target="_blank" style="color: black;">RD Auditors</a></li>
+									<li><a href="https://sourcehat.projectpi.xyz/" target="_blank" style="color: black;">SourceHat</a></li>
+								</ul>
+							</li>
 							<li><a href="https://docs.projectpi.xyz" target="_blank">Docs</a></li>
 							
 							
@@ -5000,6 +5014,87 @@ jQuery(window).on('load resize', function () {
         });
     });
 </script>
+
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+    const navBar = document.querySelector('.site-header');
+    // Updated to target the specific section for Early Staking
+    const targetSection = document.querySelector('.content-inner.overflow-hidden');
+
+    function checkSectionPosition() {
+        // Calculate the distance from the top of the target section to the top of the viewport
+        const sectionTop = targetSection.getBoundingClientRect().top + window.scrollY - navBar.offsetHeight;
+
+        // When the top of the target section is close to or above the top of the viewport
+        if (window.scrollY > sectionTop) {
+            navBar.classList.add('nav-hidden');
+        } else {
+            navBar.classList.remove('nav-hidden');
+        }
+    }
+
+    window.addEventListener('scroll', checkSectionPosition);
+});
+
+	</script>
+
+<script>
+	function debounce(func, wait, immediate) {
+    var timeout;
+    return function() {
+        var context = this, args = arguments;
+        var later = function() {
+            timeout = null;
+            if (!immediate) func.apply(context, args);
+        };
+        var callNow = immediate && !timeout;
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+        if (callNow) func.apply(context, args);
+    };
+}
+
+// Debounced scroll event listener
+window.addEventListener('scroll', debounce(updateSvgIconColor, 100));
+
+	</script>
+	
+	<script>
+		document.addEventListener('DOMContentLoaded', function() {
+			const navbar = document.querySelector('.site-header'); // Adjust if necessary
+		
+			function updateDropdownNavColor() {
+				// Assuming the navbar has specific classes or styles when it turns white
+				const isNavbarDark = getComputedStyle(navbar).borderTopColor === 'rgb(0, 0, 0)'; // Example condition; adjust as needed
+		
+				const dropdownNavs = document.querySelectorAll('.dropdown-nav');
+				dropdownNavs.forEach(nav => {
+					// Set dropdown background and text color based on the navbar's color state
+					if (isNavbarDark) {
+						// Navbar is dark, set dropdown to dark theme
+						nav.style.backgroundColor = 'black';
+						nav.querySelectorAll('a').forEach(a => a.style.color = 'white');
+					} else {
+						// Navbar is light, set dropdown to light theme
+						nav.style.backgroundColor = 'white';
+						nav.querySelectorAll('a').forEach(a => a.style.color = 'black');
+					}
+				});
+			}
+		
+			// Listen for scroll events to update the dropdown color
+			document.addEventListener('scroll', updateDropdownNavColor);
+		
+			// Initial color update based on the navbar's initial state
+			updateDropdownNavColor();
+		});
+		</script>
+rais		
+		
+		
+	
+	
+	
 
 </body>
 </html>
