@@ -10304,6 +10304,8 @@ section {
 
 .site-header {
   position: relative;
+  transition: opacity 0.5s ease-out; /* Smooth transition for opacity */
+  opacity: 1; /* Ensure the nav is fully visible by default */
   z-index: 9999; }
   .site-header .main-bar {
     background: var(--card-bg);
@@ -19734,4 +19736,165 @@ body {
 
 
 
+/* Dropdown Content (hidden by default) */ 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+  z-index: 1;
+}
 
+/* Styles for the dropdown items */
+.dropdown-content li a {
+  color: #ffffff; /* Change text color to white */
+  padding: 12px 16px; /* Padding */
+  text-decoration: none; /* Removes underline from links */
+  display: block; /* Makes the links fill the container */
+}
+
+/* Shows the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: Change background color on hover to a slightly lighter shade */
+.dropdown-content li a:hover {
+  background-color: #333333; 
+}
+.dropdown:hover .icon {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease; /* Smooth transition for rotation */
+}
+
+.nav-hidden {
+  opacity: 0; /* Fade the nav out */
+  visibility: hidden; /* Ensures that the nav bar is not clickable when hidden */
+  transition: visibility 0s 0.5s, opacity 0.5s ease-out; /* Apply transition to opacity and delay visibility change */
+}
+
+
+
+
+
+
+
+
+
+/* .banner {
+	height: calc(100dvh - .4rem);
+	background: 
+		linear-gradient(hsla(141, 60%, 75%, .8), hsla(141, 60%, 75%, .5)),
+		url("https://images.unsplash.com/photo-1499856666482-0667da148d3b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=3819851436685b5c248b49f0efd10a2a&auto=format&fit=crop&w=2982&q=80")
+		center/cover 
+		no-repeat;
+} */
+
+/* .hero--title {
+	height: calc(100% - 55px);
+	display: grid;
+	place-items: center;
+	h1 {
+		letter-spacing: -.25rem;
+		font-size: 6rem;
+		font-weight: 500;
+	}
+} */
+
+
+
+/* .navbar {
+	box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.icon { fill: #38A169; }
+} */
+
+/* .logo {
+	display: inline-block;
+	padding: 0.5rem;
+	text-decoration: none;
+	font-size: 1.5rem;
+} */
+
+
+
+/* .menu {
+	margin: 0;
+	display: flex;
+	list-style: none; */
+
+	/* a {
+		position: relative;
+		z-index: 2;
+		display: block;
+		letter-spacing: 0.01rem;
+		padding: 1rem 1rem;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.25rem;
+		transition: 0.2s;
+		&:hover {
+			color: #fff;
+			.icon { fill: #fff; }
+		}
+	}
+} */
+
+/* /* .dropdown > a {
+	display: flex;
+	align-items: center;
+	.icon { margin-left: .25em; }
+} */
+.svg-icon-light {
+  fill: white;
+}
+
+.svg-icon-dark {
+  fill: black;
+}
+
+.dropdown:hover {
+	.dropdown-nav {
+		opacity: 1;
+		transform: translateY(0);
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+	}
+}
+
+.dropdown-nav {
+  width: 175px;
+	opacity: 0;
+	transition: transform .3s cubic-bezier(0.88,-0.72, 0, 1), opacity .3s ease-in-out;
+	transform: translateY(-4rem);
+	list-style: none;
+	margin: 0;
+	padding: 1rem;
+	position: absolute;
+	z-index: 1;
+	background: white;
+	a {
+		font-weight: 300;
+		font-size: 16px;
+    color: black; /* Moved from inline styles to here for consistency */
+    display: block; /* Make links fill the container */
+    padding: 0.5rem 1rem; /* Add some padding around each link */
+    text-decoration: none; /* Optional: removes underline from links */
+
+    .dropdown-nav a:hover {
+      color: #007bff; /* Change to your preferred blue color */
+  }
+
+  .dropdown-nav a {
+    font-weight: 300;
+    font-size: 16px;
+    color: black; /* Default color */
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none; /* Removes underline from links */
+}
+
+    
+	}
+} 
