@@ -19874,6 +19874,8 @@ body {
 	position: absolute;
 	z-index: 1;
 	background: white;
+  border-radius: 10px; /* This adds rounded corners */
+
 	a {
 		font-weight: 300;
 		font-size: 16px;
@@ -19886,14 +19888,7 @@ body {
       color: #007bff; /* Change to your preferred blue color */
   }
 
-  .dropdown-nav a {
-    font-weight: 300;
-    font-size: 16px;
-    color: black; /* Default color */
-    display: block;
-    padding: 0.5rem 1rem;
-    text-decoration: none; /* Removes underline from links */
-}
+  
 
     
 	}

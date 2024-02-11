@@ -5015,5 +5015,22 @@ jQuery(window).on('load resize', function () {
     });
 </script>
 
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		// Toggle the dropdown menu for 'Reports'
+		const reportsDropdownTrigger = document.querySelector('a[href="#"]');
+		const reportsDropdownMenu = document.querySelector('.dropdown-nav');
+	
+		if (reportsDropdownTrigger && reportsDropdownMenu) {
+			reportsDropdownTrigger.addEventListener('click', function(event) {
+				event.preventDefault(); // Prevent the default anchor action
+				// Toggle visibility of the dropdown menu
+				reportsDropdownMenu.classList.toggle('is-visible');
+			});
+		}
+	});
+	</script>
+	
+
 </body>
 </html>
