@@ -8,7 +8,7 @@ window.addEventListener('load', async () => {
             "stateMutability": "view",
             "type": "function"
         }];
-        const contractAddress = '0x29Bc0daAAdc34767509869170B36Ea170893C629';
+        const contractAddress = '0x9ee215E7339A01234B2f35A0403c57b7896c14C7';
         const contract = new web3.eth.Contract(contractABI, contractAddress);
 
         // Fetching PulseChain price from CoinGecko API
