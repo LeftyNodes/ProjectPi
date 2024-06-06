@@ -866,6 +866,10 @@ h6 {
   );
 }
 
+.button_transparent:hover {
+  background-color: rgba(7, 90, 166, 0.8);
+  box-shadow: 0 0 2.5rem 0.2rem rgba(0, 149, 255, 0.5) inset, 0.2rem 1rem 4rem 0 rgba(0, 0, 0, 0.6);
+}
 .border1 {
   --size: calc(100% + 1.1rem);
   height: var(--size);
