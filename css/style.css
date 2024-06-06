@@ -815,6 +815,7 @@ h6 {
   line-height: 90%;
   white-space: nowrap;
   font-family: var(--barlow);
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .button_transparent {
@@ -866,10 +867,12 @@ h6 {
   );
 }
 
+/* Added hover effect for .button_transparent */
 .button_transparent:hover {
   background-color: rgba(7, 90, 166, 0.8);
-  box-shadow: 0 0 2.5rem 0.2rem rgba(0, 149, 255, 0.5) inset, 0.2rem 1rem 4rem 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 0 2rem rgba(3, 238, 255, 0.6), 0 0 2rem rgba(3, 238, 255, 0.6), 0 0 2rem rgba(3, 238, 255, 0.6);
 }
+
 .border1 {
   --size: calc(100% + 1.1rem);
   height: var(--size);
@@ -945,6 +948,7 @@ h6 {
 .button_wide {
   padding: 0 6.5rem;
 }
+
 
 /* --------------- hero_section ----------------- */
 .hero_section {
