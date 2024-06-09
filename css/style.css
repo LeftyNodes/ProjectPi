@@ -819,7 +819,6 @@ h6 {
 }
 
 .button_transparent {
-  box-shadow: 0 0 2rem 0 #0095ff80 inset, 0.2rem 1rem 4rem 0 #00000040;
   background: #061130;
 }
 
@@ -854,9 +853,15 @@ h6 {
   opacity: 1;
 }
 
+.button_transparent:hover {
+  background-color: rgba(7, 90, 166, 0.8);
+  box-shadow: 0 0 2rem rgba(3, 238, 255, 0.6), 0 0 2rem rgba(3, 238, 255, 0.6), 0 0 2rem rgba(3, 238, 255, 0.6);
+}
+
 .button_two {
   background: linear-gradient(90deg, #0c3b8b 60%, rgba(4, 133, 195, 1) 100%);
   box-shadow: 0 0 0.2rem 0.2rem #052854;
+  transition: background-color 0.3s, box-shadow 0.3s;
 }
 
 .button_two:hover {
@@ -865,11 +870,6 @@ h6 {
     rgba(4, 133, 195, 1) 0%,
     rgba(11, 61, 147, 1) 100%
   );
-}
-
-/* Added hover effect for .button_transparent */
-.button_transparent:hover {
-  background-color: rgba(7, 90, 166, 0.8);
   box-shadow: 0 0 2rem rgba(3, 238, 255, 0.6), 0 0 2rem rgba(3, 238, 255, 0.6), 0 0 2rem rgba(3, 238, 255, 0.6);
 }
 
@@ -948,6 +948,7 @@ h6 {
 .button_wide {
   padding: 0 6.5rem;
 }
+
 
 
 /* --------------- hero_section ----------------- */
